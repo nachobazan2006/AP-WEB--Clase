@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huellitas - Contacto</title>
+    <link rel="stylesheet" href="public/style.css">
+</head>
+<body>
+    <header>
+    <a href="index.html" aria-label="Vinculo al Inicio"></a>
+    <img src="public/imagenes/perro.jpg" alt="ejemplo perro">
+
+        <nav>
+            <a href="./index.html">
+                Inicio
+            </a>
+            <p>
+
+            </p>
+            <a href="./contacto.html">
+                Contacto
+            </a>
+            <p></p>
+            
+              <a href="./catalogo.html">
+                Catálogo
+            </a>
+        </nav>
+    </header>
+    <main>
+      <h1>CONTACTO</h1>
+      <!-- a donde y como los quiero mandar -->
+      <form action="./index.html" method="post">
+        <!-- atributo type es q tipo de dato busco -->
+         <!-- en el for del label se ha de poner el id del input que quiero enlazar -->
+        <label for="id-nombre">Nombre</label>
+        <input type="text" name="Nombre" id="id-nombre">
+        <label for="id-email">email</label>
+        <input type="email" name="email" id="id-email">
+        <label for="id-tipo-mascota">Tipo de mascota</label>
+
+        <!-- este select funciona como un combobox atraves de los option value -->
+        <select name="tipo-mascota" id="id-tipo-mascota">
+            <option value="perro">Perro</option>
+            <option value="Gato">Gato</option>
+            <option value="Ave">Ave</option>
+        </select>
+        <label for="id-comentario">comentario</label>
+        <textarea name="comentario" id="id-comentario"></textarea>
+        <button type="submit">Enviar</button>
+
+      </form>
+      <form action="./contacto.html" method="post">
+
+
+            <label for="id-nombre">Nombre</label>
+            <input type="text" name="Nombre" id="id-nombre">
+
+
+            <label for="id-Categoria">Categoria</label>
+            <select name="Categoria" id="id-Categoria">
+                <option value="Invierno">Invierno</option>
+                <option value="Verano">Verano</option>
+                <option value="liquidacion">Liquidaciòn</option>
+            </select>
+
+
+            <label for="id-email">email</label>
+            <input type="email" name="email" id="id-email">
+
+
+            <label for="id-comentario">comentario</label>
+            <textarea name="comentario" id="id-comentario"></textarea>
+
+
+            <button type="submit">Enviar</button>
+
+
+
+
+
+
+        </form>
+
+      <h2>Donde estamos?</h2>
+    </main>
+    <section>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3404.8698411162086!2d-64.18888832373419!3d-31.4177119963166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a28382167cfb%3A0x1ef3ae3cd0407f65!2sCaseros%20100%2C%20X5000AHD%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1788362294483!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    </section>
+    <footer>
+        <!-- lista desordenada -->
+        <ul>
+            <!-- dentro de li se pone un vinculo x ej de redes sociales -->
+             <li>
+                <a href="Https://Instagram.com/huellitas">
+                        @huellitas
+                </a>
+             </li>
+             <li>
+                Caseros 100. Barrio Centro. Córdoba Capital
+             </li>
+        </ul>
+    </footer>
+</body>
+</html>
