@@ -1,0 +1,19 @@
+-verificar version de npm:
+npm -v
+
+- Instalar pnpm (en el aula):
+npm i -g pnpm
+
+En cada proyecto:
+
+- Inicializar proyecto en la ruta que quiero iniciar el desarrollo:
+pn init
+(crea el documento package.json)
+
+- Instalar un paquete:
+- https://www.npmjs.com/
+pn add five-server
+
+- Creacion de .gitignore para ignorar node_modules y no se suba al repo (no le hacemos
+- para volver a instalar lo que figura en package.json:
+pn install

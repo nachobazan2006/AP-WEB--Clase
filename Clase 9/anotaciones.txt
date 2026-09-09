@@ -1,0 +1,14 @@
+FIVE-SERVER es un servidor para probar localemnte bajo el protocolo http
+en fiveserver creamos conifugracion valor src de propiedad root, estamos creando un JSON.
+
+Importante manejar documentaciòn de los lenguajes utilizados; fuente de la verdad.
+de tipo : nombres de las etiquetas
+de clase; nombre ejeutado por nosotros
+rgb 6 caracteres 2 r 2 g 2b
+css es literalmente una casacdaa
+,, hace de arriba hacia abajo, un elemento de debajo va pisar el de arriba... a menos que
+especifidad; hay selectores mas importantes que otros (los de tipo son menos especificos
+que los de clase) haciendo que rompa la cascada.
+
+si se especifica un multielemento, tiene aun mas especificidad y por lo tanto prioridad
+.encabezado-principal .vinculos a {}
