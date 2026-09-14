@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Mi</title>
+    <link rel="stylesheet" href="./recursos/estilos/estilos.css">
+</head>
+
+<body>
+    <header>
+        <a href="aboutme.html" aria-label="vinculo a aboutme"> </a>
+        <img src="recursos/imagenes/fotografo.png" alt="Logo">
+
+    </header>
+    <nav>
+        <a href="index.html">
+            Sobre mi
+        </a>
+        
+        <a href="contacto.html">
+            Contacto
+        </a>
+    </nav>
+    <main>
+        <h2>CONTACTO</h2>
+        <p>Si estás interesado en realizar una sesión fotográfica o querés conocer más información sobre alguno de mis
+            servicios, podés completar el siguiente formulario.
+
+            Contame brevemente qué tipo de trabajo necesitás y para qué utilizarías las fotografías. Con esta
+            información podré conocer mejor tu proyecto y preparar una propuesta adecuada.</p>
+
+        <form action="./contacto.html" method="post">
+            <label for="id-nombre">Nombre</label>
+            <input type="text" name="nombre" id="id-nombre">
+
+            <label for="id-telefono" method="post">Teléfono</label>
+            <input type="number" name="telefono" id="id-telefono">
+
+            <label for="id-email">Email</label>
+            <input type="text" name="email" id="id-email">
+
+            <label for="id-comentario">Comentario</label>
+            <input type="text" name="comentario" id="id-comentario">
+
+            <label for="id-tipo-servicio">Tipo de servicio</label>
+            <select name="Tipo de servicio" id="id-tipo-servicio">
+                <option value="emprendimientos">Emprendimientos</option>
+                <option value="ropa">Tienda de ropa</option>
+                <option value="eventos">Eventos</option>
+                <option value="otros">Otros</option>
+            </select>
+            <button type="submit">Enviar </button>
+        </form>
+
+    </main>
+
+
+</body>
+
+</html>

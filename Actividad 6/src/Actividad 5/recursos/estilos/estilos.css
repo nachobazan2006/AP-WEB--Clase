@@ -1,0 +1,48 @@
+header {
+    background-color: bisque;
+}
+
+nav {
+    background-color: bisque;
+    text-decoration: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+
+}
+
+nav a :hover {
+    color: grey;
+}
+
+main {
+    background-color: chocolate;
+    padding: 10px 20px 10px 10px;
+}
+
+.quientrabajo {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: azure;
+}
+
+.comotrabajo {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: azure;
+}
+.quiensoy 
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: azure;    
+}
+.servicios 
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: azure;     
+}
+.trayectoria 
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: azure;     
+}
