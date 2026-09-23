@@ -1,0 +1,154 @@
+/*
+Sintaxis CSS
+
+Regla o Rule
+*/
+/*
+selector{
+    propiedad1: valor;
+    propiedad2: valor;
+}
+*/
+@font-face{
+    font-family: Monserrat;
+    src: url(./fuentes/Montserrat-Regular.ttf);
+}
+
+/* Selector universal */
+*{
+   box-sizing: border-box; 
+}
+
+html, body, h1, h2, h3, p{
+    margin:0;
+    padding:0;
+}
+/*
+Selectores de TIPO
+*/
+html{
+    font-family: Monserrat, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px; /* tamaño base que está en la raiz que sirve como referencia */
+}
+
+body{
+    font-family: Monserrat;
+    background-color: #eee; /*  #000000 #ffffff */
+}
+
+header{
+    background-color: #ffff00;
+}
+
+a{
+    color: #000000;
+    text-decoration: none;
+}
+p{
+    font-size: 0.8rem; /* busca la referencia de la raiz y lo multipla por el numero indicado */
+    /* em */
+}
+/* SELECTORES DE CLASE */
+
+/* .vinculos{
+    color: #222;
+} */
+
+/* --------------- */
+.encabezado-principal .boton-menu 
+{
+    display: block;
+}
+.encabezado-principal nav 
+{
+    display: none;
+}
+.encabezado-principal{
+    position:sticky;/* pegado */
+    top:-200;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ccc;
+    padding:5px;
+    z-index: 1  ;
+}
+
+.encabezado-principal a img{
+  width: 50px;
+}
+
+.encabezado-principal .vinculos a{
+    color: #222;
+}
+.contenido-principal-parrafo
+{
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    background-color: #ffff00;
+    padding: 10px;
+    width: 300px;
+    /* El encabezado tiene z-index: 1.
+       Proba 0 para que el texto pase por debajo y 2 para verlo por encima.
+       Hace scroll para que el parrafo se cruce con el encabezado pegado. */
+    z-index: 2;
+
+}
+
+/* ----------------- */
+.contenido-principal{
+    background-color: #fff;
+    height: 1500px;
+}
+
+/*
+COMPORTAMIENTO DE POSICIONAMIENTO ABSOLUTO
+.contenido-principal .parrafo{
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    background-color: #ffff00;
+    padding: 10px;
+    width: 300PX;
+} */
+
+/* ----------------------*/ 
+.pie-principal{
+    background-color: #ccc;
+}
+
+.pie-principal .mensajeria{
+    position: fixed; /* referencia es el viewport */
+    bottom: 20px;
+    right: 20px;
+    list-style: none;
+}
+/* Selector ID */
+/* #contactos{
+    background-color: #ffff00;
+} */
+
+/* Selector Atributo*/
+
+/* [class]{
+
+} */
+
+/* sirve para dar condicion de a q dispositivo ponerle 
+determinado propiedad */
+ @media (width > 600px)
+ {  .encabezado-principal .boton-menu 
+    {
+        display: none;
+    }
+    .encabezado-principal nav
+    {
+        display: block;
+    }
+    .contenido-principal
+    {
+        background-color: #f80000;
+    }
+ }
