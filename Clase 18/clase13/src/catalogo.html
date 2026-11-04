@@ -1,72 +1,26 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./recursos/estilos/index.css">
-    <script type="module" src="./recursos/js/index.js"></script>
-    <title>Huellitas</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Catálogo | Huellitas</title>
+  <link rel="stylesheet" href="./recursos/estilos/index.css">
+  <script type="module" src="./recursos/js/index.js"></script>
 </head>
-
 <body>
-    <header>
-        <a href="./index.html" aria-label="Vinculo al inicio">
-            <img src="./recursos/imagenes/mascotas.png" alt="Logo huellitas">
-        </a>
-        <nav>
-            <a href="./index.html">
-                Inicio
-            </a>
-            <a href="./catalogo.html">
-                Catálogo
-            </a>
-            <a href="./contacto.html">
-                Contacto
-            </a>
-        </nav>
-    </header>
-    <main>
-        <h1>Catálogo</h1>
-        <section>
-            <h2>Productos</h2>
-            <!-- div como contenedor de articulos -->
-            <div id="contenedor-productos">
-                <article>
-                    <h3>Correa de cuero</h3>
-                    <picture>
-                        <img src="./recursos/imagenes/productos/correa-perro.jpg" alt="Correa de cuero para perro">
-                        <!-- <source media="(min-width: )" srcset="" sizes=""> -->
-                    </picture>
-                    <p>
-                        Correa de cuero extensible
-                    </p>
-                    <ul>
-                        <li>
-                            Telles S M L
-                        </li>
-                        <li>
-                            Precio $ 10000
-                        </li>
-                    </ul>
-                    <button>Añadir al carro</button>
-                </article>
-               
-            </div>
-        </section>
-    </main>
-    <footer>
-        <ul>
-            <li>
-                <a href="https://instagram.com/huellitas">
-                    @huellitas
-                </a>
-            </li>
-            <li>
-                Caseros 100. Bº Centro. Córdoba Capital
-            </li>
-        </ul>
-    </footer>
-</body>
+  <header>
+    <a href="./index.html"><img src="./recursos/imagenes/mascotas.png" alt="Logo de Huellitas" width="64"></a>
+    <nav aria-label="Navegación principal"><a href="./index.html">Inicio</a> <a href="./catalogo.html" aria-current="page">Catálogo</a> <a href="./contacto.html">Contacto</a></nav>
+  </header>
+  <main class="catalogo-pagina">
+    <h1>Catálogo de Huellitas</h1>
+    <p>Accesorios para acompañar cada paseo.</p>
+    <div class="catalogo-controles"><label for="filtro-talle">Filtrar por talle:</label>
+      <select id="filtro-talle"><option value="">Todos</option><option value="S">S</option><option value="M">M</option><option value="L">L</option></select></div>
+    <p id="estado-catalogo" role="status" aria-live="polite"></p>
+    <section aria-label="Productos" id="contenedor-productos"></section>
 
+  </main>
+  <footer><p>Huellitas · Caseros 100, Córdoba Capital</p></footer>
+</body>
 </html>

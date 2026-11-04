@@ -1,7 +1,12 @@
-import hola from `./productos.js`
-import {productosMascotas} from `./productos.js`
-import {renderizarCatalogo, filtrarPorTalle} from `./funciones`
-
-const contenedorProductos = document.getElementById(`contenedor-productos`)
-
-renderizarCatalogo(contenedorProductos, productosMascotas)
+import { productosMascotas } from './productos.js';
+import { filtrarPorTalle, renderizarCatalogo } from './funciones.js';
+const contenedor = document.getElementById('contenedor-productos');
+const filtro = document.getElementById('filtro-talle');
+const estado = document.getElementById('estado-catalogo');
+function actualizar() {
+  const visibles = filtrarPorTalle(productosMascotas, filtro.value);
+  renderizarCatalogo(contenedor, visibles);
+  estado.textContent = `${visibles.length} productos disponibles`;
+}
+filtro.addEventListener('change', actualizar);
+actualizar();

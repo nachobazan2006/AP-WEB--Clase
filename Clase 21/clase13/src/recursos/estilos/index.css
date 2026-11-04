@@ -1,0 +1,147 @@
+/*
+Sintaxis CSS
+
+Regla o Rule
+*/
+/*
+selector{
+    propiedad1: valor;
+    propiedad2: valor;
+}
+*/
+@font-face{
+    font-family: Monserrat;
+    src: url(./fuentes/Montserrat-Regular.ttf);
+}
+
+/* Selector universal */
+*{
+   box-sizing: border-box;
+}
+
+html, body, h1, h2, h3, p{
+    margin:0;
+    padding:0;
+}
+/*
+Selectores de TIPO
+*/
+html{
+    font-family: Monserrat, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+}
+
+body{
+    font-family: Monserrat;
+    background-color: aqua; /*  #000000 #ffffff */
+}
+
+header{
+    background-color: #ffff00;
+}
+
+a{
+    color: #000000;
+    text-decoration: none;
+}
+p{
+    font-size: 0.75rem;
+}
+/* SELECTORES DE CLASE */
+
+/* .vinculos{
+    color: #222;
+} */
+
+/* --------------- */
+
+
+.encabezado-principal{
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ccc;
+    padding:5px;
+    z-index: 1;
+
+}
+.encabezado-principal nav {
+        display: none;
+}
+
+.encabezado-principal .boton-menu {
+        display: block;
+ }
+.encabezado-principal a img{
+  width: 50px;
+}
+.encabezado-principal .vinculos a{
+    color: #222;
+}
+
+/* ----------------- */
+.contenido-principal{
+    background-color: aqua;
+    height: 1500px;
+}
+.contenido-principal .parrafo{
+    top: 50px;
+    right: 20px;
+    position: absolute;
+    padding: 10px;
+    background-color:#ffff00;
+    padding: 10px;
+    width: 300px;
+}
+/* ----------------------*/
+.pie-principal{
+    background-color: #ccc;
+}
+.pie-principal .mensajeria{
+    position: fixed; /* referencia es el viewport */
+    bottom: 20px;
+    right: 20px;
+    list-style: none;
+}
+
+@media(width>600px){
+    .encabezado-principal nav {
+        display: block;
+    }
+
+    .encabezado-principal .boton-menu {
+        display: none;
+    }
+
+    .contenido-principal {
+        background-color: #d30707;
+    }
+}
+
+/* Selector ID */
+/* #contactos{
+    background-color: #ffff00;
+} */
+
+/* Selector Atributo*/
+
+[class]{
+
+}
+/* Catálogo: grid, modelo de caja y adaptación a pantallas pequeñas. */
+.catalogo-pagina { max-width: 1100px; min-height: 70vh; margin: auto; padding: 2rem 1rem; }
+.catalogo-pagina h1 { margin-bottom: .5rem; }
+.catalogo-controles { display: flex; flex-wrap: wrap; align-items: center; gap: .75rem; margin: 1.5rem 0; }
+.catalogo-controles select, .catalogo-pagina button { padding: .55rem .8rem; font: inherit; cursor: pointer; }
+#contenedor-productos { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 230px), 1fr)); gap: 1rem; }
+#contenedor-productos article { padding: 1rem; background: #fff; border: 1px solid #555; border-radius: .5rem; }
+#contenedor-productos img { display: block; width: 100%; height: 180px; object-fit: cover; }
+#contenedor-productos h2 { margin: .75rem 0; font-size: 1.2rem; }
+#contenedor-productos p { margin: .5rem 0; font-size: 1rem; }
+#contenedor-productos ul { padding-left: 1.25rem; }
+#detalle-producto { max-width: min(90vw, 420px); border-radius: .5rem; }
+#detalle-producto::backdrop { background: #0008; }
+@media (max-width: 600px) { .catalogo-pagina { padding: 1rem; } .catalogo-controles { align-items: stretch; flex-direction: column; } }
